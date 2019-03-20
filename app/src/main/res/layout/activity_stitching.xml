@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivery.DeliveryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCartProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Order ID : #"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="12345678"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Gender :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Male"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Type :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Shirt,Pant"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="Total Products : "/>
+
+                        <TextView
+                            android:id="@+id/tvProductsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="2"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="11 Nov 2018"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/cv_pending"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/tvOrderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pending"
+                        android:textAllCaps="true"
+                        android:layout_margin="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/pending"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:background="@color/colorCardBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:textAllCaps="true"
+                    android:text="DETAILS"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCartProduct1"
+        android:layout_below="@+id/cvCartProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Order ID : #"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="21122211"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Gender :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Female"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Type :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Salwar, Kurta"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="Total Products : "/>
+
+                        <TextView
+                            android:id="@+id/tvProductsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="2"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="14 Nov 2018"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/cv_confirmed"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/tvOrderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Working"
+                        android:textAllCaps="true"
+                        android:layout_margin="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/confirmed"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:background="@color/colorCardBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:textAllCaps="true"
+                    android:text="DETAILS"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCartProduct2"
+        android:layout_below="@+id/cvCartProduct1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Order ID : #"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="1444111"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Gender :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Male"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="Type :"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Safari"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="Total Products : "/>
+
+                        <TextView
+                            android:id="@+id/tvProductsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="1"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:text="04 Nov 2018"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@drawable/cv_cancelled"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/tvOrderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancelled"
+                        android:textAllCaps="true"
+                        android:layout_margin="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/cancelled"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:background="@color/colorCardBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:textAllCaps="true"
+                    android:text="DETAILS"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

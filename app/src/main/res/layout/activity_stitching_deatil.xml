@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/lledit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:visibility="visible">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_floatingLabelText="Gender"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="15dp"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_highlightColor="@color/colorAccent"
+                app:ms_hint="Change Status"
+                app:ms_hintColor="@color/colorAccent"
+                app:ms_multiline="false"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Order ID : #"/>
+
+                <TextView
+                    android:id="@+id/tvOrderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="12345678"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Gender :"/>
+
+                <TextView
+                    android:id="@+id/tvOrderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Male"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Type :"/>
+
+                <TextView
+                    android:id="@+id/tvOrderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Shirt,Pant"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:text="Total Products : "/>
+
+                <TextView
+                    android:id="@+id/tvProductsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:text="11 Nov 2018"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btsaveadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rectsimpl"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Save Status"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/lledit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:visibility="visible">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_floatingLabelText="Gender"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="15dp"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_highlightColor="@color/colorAccent"
+                app:ms_hint="Select Gender"
+                app:ms_hintColor="@color/colorAccent"
+                app:ms_multiline="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etFNameLayout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:textSize="15sp"
+                        android:id="@+id/etfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:hint="First Name"
+                        android:text="Omkar"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etLNameLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:textSize="15sp"
+                        android:id="@+id/etlastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:hint="Last Name"
+                        android:text="Kumbhar"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etFNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="15sp"
+                    android:id="@+id/etfirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:hint="Mobile Number"
+                    android:text=""
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etAddressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="15sp"
+                    android:id="@+id/etland_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:lines="4"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:hint="Address"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btsaveadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rectsimpl"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Take Measurements"
+        android:textColor="@color/white" />
+</RelativeLayout>

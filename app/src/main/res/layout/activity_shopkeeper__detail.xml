@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stitching.Shopkeeper_Detail"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/user_email_shopkeer"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELLO"/>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/min_content_height"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:textAlignment="center">
+
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Men's Shirt"
+                android:textSize="30dp"
+                android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/layout_neck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Neck:"/>
+            <TextView
+                android:id="@+id/mens_shirt_neck_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Neck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_chest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Chest:"/>
+            <TextView
+                android:id="@+id/mens_shirt_chest__shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Chest"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_waist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Waist:"/>
+            <TextView
+                android:id="@+id/mens_shirt_waist_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Waist"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sleeves"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Sleeves:"/>
+            <TextView
+                android:id="@+id/mens_shirt_sleeves_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sleeves"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Hip:"/>
+            <TextView
+                android:id="@+id/mens_shirt_hips_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bicep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Bicep:"/>
+            <TextView
+                android:id="@+id/mens_shirt_bicep_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bicep"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cuff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Cuff:"/>
+            <TextView
+                android:id="@+id/mens_shirt_cuff_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cuff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_shirt_length"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Shirt Length:"/>
+            <TextView
+                android:id="@+id/mens_shirt_length_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shirt Length"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_armwhole"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="ArmWhole:"/>
+            <TextView
+                android:id="@+id/mens_shirt_armwhole_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Arm Whole"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_shoulder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Shoulder:"/>
+            <TextView
+                android:id="@+id/mens_shirt_shoulder_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shoulder"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sleeves_length"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Sleeves Length"/>
+            <TextView
+                android:id="@+id/mens_shirt_sleeves_length_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sleeves Length"/>
+        </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/status_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+
+            <Button
+                android:id="@+id/btn_change_status_shopkeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stitch!"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

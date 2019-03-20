@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:padding="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/marketing_srno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Sr no:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/marketing_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="User id:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/marketing_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Date:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

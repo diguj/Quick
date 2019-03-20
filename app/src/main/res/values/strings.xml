@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quick Stitch</string>
+    <string name="splash_txt">Don\'t buy... We can make it!</string>
+
+    <string-array name="status">
+        <item>Measurements taken</item>
+        <item>Stiching in process</item>
+        <item>completed</item>
+        <item>delivered</item>
+        <item>order canceld</item>
+    </string-array>
+</resources>

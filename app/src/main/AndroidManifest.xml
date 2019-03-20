@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.core.cwtailor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OrderHistory"></activity>
+        <activity android:name=".delivery.DetailDelivery" />
+        <activity android:name=".measurement.Pant" />
+        <activity android:name=".stitching.Shopkeeper_Detail" />
+        <activity android:name=".stitching.Shopkeeper" />
+        <activity android:name=".measurement.Shirt" />
+        <activity android:name=".measurement.Select" />
+        <activity android:name=".Selection" />
+        <activity android:name=".measurement.Measurement" />
+        <activity android:name=".measurement.TakeMeasurements" />
+        <activity android:name=".measurement.Marketing" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".HomepageActivity" />
+        <activity android:name=".measurement.MeasurementDetailActivity" />
+        <activity android:name=".delivery.DeliveryActivity" />
+        <activity android:name=".stitching.StitchingActivity" />
+        <activity android:name=".stitching.StitchingDetailActivity" />
+        <activity android:name=".delivery.DeliveryDetailActivity" />
+        <activity android:name=".User" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
