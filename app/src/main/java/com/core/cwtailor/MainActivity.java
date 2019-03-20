@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 Map<String, String> params = new HashMap<>();
                 params.put("email_id", email_id);
                 params.put("api_date", api_date);
+
                 return params;
             }
         };

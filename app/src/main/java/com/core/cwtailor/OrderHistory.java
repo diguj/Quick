@@ -56,12 +56,10 @@ public class OrderHistory extends AppCompatActivity {
 
         orderHistoryModelList = new ArrayList<>();
         progressDialog = new ProgressDialog(this);
+/*         adapter = new OrderHistoryAdapter(OrderHistory.this, orderHistoryModelList);
+        recyclerView.setAdapter(adapter);*/
         SharedPreferences sharedPreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
         text = sharedPreferences.getString("uname", "");
-
-         adapter = new OrderHistoryAdapter(OrderHistory.this, orderHistoryModelList);
-        recyclerView.setAdapter(adapter);
-
         orderhistory();
     }
 
@@ -69,22 +67,24 @@ public class OrderHistory extends AppCompatActivity {
         progressDialog.setMessage("Loading Date");
         progressDialog.show();
 
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 Constants.ORDER_HISTORY,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         progressDialog.dismiss();
-                        Log.d(response, "");
+
                         try {
-                            Log.e("JsonException", response);
+
                             JSONObject jsonObject = new JSONObject(response);
 
                             boolean success = jsonObject.getBoolean("success");
 
-                            Log.d(response, "");
+
                             if (success) {
                                 JSONArray jsonArray = jsonObject.getJSONArray("orderhistory");
+
                                 for (int i = 0; i < jsonArray.length(); i++) {
                                     OrderHistoryModel historyModel = new OrderHistoryModel();
                                     JSONObject object = jsonArray.getJSONObject(i);
@@ -94,11 +94,12 @@ public class OrderHistory extends AppCompatActivity {
                                     historyModel.setOrder_type(object.getString("order_type"));
                                     historyModel.setDelivery_date(object.getString("delivery_date"));
                                     historyModel.setEmail_id(object.getString("email_id"));
+                                    historyModel.setStatus(object.getString("status"));
                                     orderHistoryModelList.add(historyModel);
                                 }
-                                adapter.refreshAdapter(orderHistoryModelList);
-                              /*  adapter = new OrderHistoryAdapter(OrderHistory.this, orderHistoryModelList);
-                                recyclerView.setAdapter(adapter);*/
+                               // adapter.refreshAdapter(orderHistoryModelList);
+                               adapter = new OrderHistoryAdapter(OrderHistory.this, orderHistoryModelList);
+                                recyclerView.setAdapter(adapter);
                             }
                         } catch (JSONException e) {
                             Log.e("JsonException", e.toString());
@@ -120,6 +121,7 @@ public class OrderHistory extends AppCompatActivity {
                 return params;
             }
         };
+
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
@@ -127,6 +129,7 @@ public class OrderHistory extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

@@ -85,10 +85,17 @@ public class Select extends AppCompatActivity {
 
                             finish();
                             break;
-                        /*case 1:
-                            Toast.makeText(Dashboard.this, "Program registration for the college pending", Toast.LENGTH_SHORT).show();
+                        case 1:
+                             TextView editText2 = (TextView) findViewById(R.id.txt_email_id);
+                            String text2 = editText2.getText().toString();
+                            Intent feedbackintent2 = new Intent(Select.this, Pant.class);
+                            feedbackintent2.putExtra(EXTRA_TEXT,text2);
+                            feedbackintent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(feedbackintent2);
+                            finish();
                             break;
-                        case 2:
+
+                        /*case 2:
                             Toast.makeText(Dashboard.this, "Workshop not available for your college yet ", Toast.LENGTH_SHORT).show();
                             break;
                         case 3:

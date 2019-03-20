@@ -9,6 +9,7 @@ public class OrderHistoryModel {
     private String email_id;
     private String fullname;
     private String delivery_date;
+    private String status;
 
 
     public String getOrder_id() {
@@ -65,5 +66,13 @@ public class OrderHistoryModel {
 
     public void setEmail_id(String email_id) {
         this.email_id = email_id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
